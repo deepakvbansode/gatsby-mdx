@@ -4,18 +4,36 @@
   display: flex;
 }
 
-aside.sidebar {
+.sidebar {
   width: 100px;
-  border-right: 3px solid gray;
   padding: 5px;
+  position: fixed;
+  left: 0;
+  border: 0;
+  height: 100vh;
+  border-right: 4px solid gray;
 }
 
-aside.sidebar ul {
+
+.sidebar ul {
   list-style-type: none;
   margin: 0px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar li {
+  padding: 5px;
+  transition: background-color 1s;
+}
+.sidebar li:hover {
+  background-color: cornflowerblue;
 }
 
 main.main {
   width: 80%;
   padding: 10px;
+  margin-left:100px
 }

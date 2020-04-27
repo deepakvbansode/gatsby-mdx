@@ -7,9 +7,9 @@ const LiveCode = props => {
   const components = useMDXScope();
   return (
     <LiveProvider code={props.children.props.children.trim()} scope={components}>
+      <LivePreview />
       <LiveEditor />
       <LiveError />
-      <LivePreview />
     </LiveProvider>
   );
 } 
